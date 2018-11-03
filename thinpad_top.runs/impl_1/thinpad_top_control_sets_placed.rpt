@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Nov  1 10:18:14 2018
+| Host         : DESKTOP-N6B5F4R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file thinpad_top_control_sets_placed.rpt
+| Design       : thinpad_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              68 |           13 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              66 |           10 |
+| Yes          | No                    | No                     |             110 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              22 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------------------------------+---------------------------------------------+------------------+----------------+
+|    Clock Signal    |                   Enable Signal                   |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------------+---------------------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk_50M_IBUF_BUFG | ext_uart_r/tickgen/OversamplingTick               |                                             |                1 |              2 |
+|  clk_50M_IBUF_BUFG | ext_uart_r/tickgen/RxD_data_reg[0][0]             |                                             |                2 |             16 |
+|  clk_50M_IBUF_BUFG | ext_uart_r/E[0]                                   |                                             |                1 |             16 |
+|  clk_50M_IBUF_BUFG | ext_uart_t/tickgen/TxD_shift_reg[0][0]            |                                             |                2 |             16 |
+|  clk_50M_IBUF_BUFG | ext_uart_t/ext_uart_tx_reg[7][0]                  |                                             |                1 |             16 |
+|  clk_50M_IBUF_BUFG |                                                   | vga800x600at75/vdata                        |                3 |             22 |
+|  clk_50M_IBUF_BUFG | ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[0][0] |                                             |                2 |             22 |
+|  clk_50M_IBUF_BUFG | ext_uart_t/tickgen/E[0]                           |                                             |                2 |             22 |
+|  clk_50M_IBUF_BUFG | vga800x600at75/vdata                              | vga800x600at75/vdata[11]_i_1_n_0            |                3 |             22 |
+|  clk_50M_IBUF_BUFG |                                                   | ext_uart_t/FSM_onehot_TxD_state_reg_n_0_[0] |                7 |             44 |
+|  clk_50M_IBUF_BUFG |                                                   |                                             |               13 |             68 |
++--------------------+---------------------------------------------------+---------------------------------------------+------------------+----------------+
+
+

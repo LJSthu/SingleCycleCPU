@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 16 13:51:38 2018
+# Process ID: 1584
+# Current directory: D:/2018autumn/organization/Simple-ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14144 D:\2018autumn\organization\Simple-ALU\thinpad_top.xpr
+# Log file: D:/2018autumn/organization/Simple-ALU/vivado.log
+# Journal file: D:/2018autumn/organization/Simple-ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2018autumn/organization/Simple-ALU/thinpad_top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/programs/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pll_example'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'pll_example'...
+[Tue Oct 16 14:30:03 2018] Launched pll_example_synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/pll_example_synth_1/runme.log
+[Tue Oct 16 14:30:03 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 14:31:22 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 14:32:43 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 14:38:09 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 14:39:33 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 14:41:01 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 19:20:53 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 19:21:49 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 19:23:31 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 19:32:36 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 19:33:42 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 19:35:09 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 19:53:49 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 19:54:38 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 20:04:12 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 20:06:30 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 20:07:40 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 20:09:21 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Oct 16 20:15:29 2018] Launched synth_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Oct 16 20:16:47 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Oct 16 20:18:12 2018] Launched impl_1...
+Run output will be captured here: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 16 20:20:24 2018...

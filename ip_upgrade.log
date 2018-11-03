@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Oct 16 13:50:04 2018
+| Host         : DESKTOP-N99O3L4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pll_example'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of pll_example (xilinx.com:ip:clk_wiz:6.0) to (Rev. 1)
+

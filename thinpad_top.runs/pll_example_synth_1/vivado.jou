@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 16 14:30:05 2018
+# Process ID: 10024
+# Current directory: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/pll_example_synth_1
+# Command line: vivado.exe -log pll_example.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pll_example.tcl
+# Log file: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/pll_example_synth_1/pll_example.vds
+# Journal file: D:/2018autumn/organization/Simple-ALU/thinpad_top.runs/pll_example_synth_1\vivado.jou
+#-----------------------------------------------------------
+source pll_example.tcl -notrace

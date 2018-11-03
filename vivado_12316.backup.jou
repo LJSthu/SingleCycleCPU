@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 16 13:49:10 2018
+# Process ID: 12316
+# Current directory: D:/2018autumn/organization/Simple-ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7068 D:\2018autumn\organization\Simple-ALU\thinpad_top.xpr
+# Log file: D:/2018autumn/organization/Simple-ALU/vivado.log
+# Journal file: D:/2018autumn/organization/Simple-ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2018autumn/organization/Simple-ALU/thinpad_top.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset pll_example -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  pll_example] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips pll_example] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1

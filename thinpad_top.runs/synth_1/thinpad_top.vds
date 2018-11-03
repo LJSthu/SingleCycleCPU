@@ -1,0 +1,835 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov  1 10:16:46 2018
+# Process ID: 13464
+# Current directory: C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1
+# Command line: vivado.exe -log thinpad_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
+# Log file: C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1/thinpad_top.vds
+# Journal file: C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source thinpad_top.tcl -notrace
+Command: synth_design -top thinpad_top -part xc7a100tfgg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15744 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 387.023 ; gain = 97.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pll_example' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1/.Xil/Vivado-13464-DESKTOP-N6B5F4R/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1/.Xil/Vivado-13464-DESKTOP-N6B5F4R/realtime/pll_example_stub.v:5]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:135]
+INFO: [Synth 8-6157] synthesizing module 'SingleCycleCPU' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SingleCycleCPU.v:28]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PC.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PC.v:32]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/InstructionMemory.v:28]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/CPUInsMem.txt' is read successfully [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/InstructionMemory.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/InstructionMemory.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/ControlUnit.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/ControlUnit.v:51]
+INFO: [Synth 8-6157] synthesizing module 'Select5bits' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/select5.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Select5bits' (5#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/select5.v:33]
+INFO: [Synth 8-6157] synthesizing module 'RegisterHeap' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/RegisterHeap.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterHeap' (6#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/RegisterHeap.v:36]
+INFO: [Synth 8-6157] synthesizing module 'SignZeroExtend' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SignZeroExtend.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'SignZeroExtend' (7#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SignZeroExtend.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Select32bits' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/select32.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Select32bits' (8#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/select32.v:31]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/ALU.v:36]
+INFO: [Synth 8-226] default block is never used [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/ALU.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/ALU.v:36]
+INFO: [Synth 8-6157] synthesizing module 'PCJump' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCJump.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'PCJump' (10#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCJump.v:28]
+INFO: [Synth 8-6157] synthesizing module 'PCNext' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCNext.v:34]
+WARNING: [Synth 8-567] referenced signal 'Reset' should be on the sensitivity list [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCNext.v:40]
+WARNING: [Synth 8-567] referenced signal 'PC' should be on the sensitivity list [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCNext.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PCNext' (11#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/PCNext.v:34]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/DataMemory.v:34]
+WARNING: [Synth 8-4767] Trying to implement RAM 'memory_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "memory_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (12#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/DataMemory.v:34]
+WARNING: [Synth 8-3848] Net readData1 in module/entity SingleCycleCPU does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SingleCycleCPU.v:30]
+WARNING: [Synth 8-3848] Net readData2 in module/entity SingleCycleCPU does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SingleCycleCPU.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SingleCycleCPU' (13#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/SingleCycleCPU.v:28]
+WARNING: [Synth 8-350] instance 'cpu' of module 'SingleCycleCPU' requires 21 connections, but only 2 given [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:135]
+INFO: [Synth 8-6157] synthesizing module 'async_receiver' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:75]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 8 - type: integer 
+	Parameter l2o bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:189]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 8 - type: integer 
+	Parameter AccWidth bound to: 21 - type: integer 
+	Parameter ShiftLimiter bound to: 7 - type: integer 
+	Parameter Inc bound to: 3221 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (14#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (15#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:75]
+WARNING: [Synth 8-350] instance 'ext_uart_r' of module 'async_receiver' requires 7 connections, but only 5 given [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:247]
+INFO: [Synth 8-6157] synthesizing module 'async_transmitter' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:14]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BaudTickGen__parameterized0' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:189]
+	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter Baud bound to: 9600 - type: integer 
+	Parameter Oversampling bound to: 1 - type: integer 
+	Parameter AccWidth bound to: 21 - type: integer 
+	Parameter ShiftLimiter bound to: 4 - type: integer 
+	Parameter Inc bound to: 403 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (15#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (16#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:14]
+INFO: [Synth 8-6157] synthesizing module 'vga' [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/vga.v:15]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 800 - type: integer 
+	Parameter HFP bound to: 856 - type: integer 
+	Parameter HSP bound to: 976 - type: integer 
+	Parameter HMAX bound to: 1040 - type: integer 
+	Parameter VSIZE bound to: 600 - type: integer 
+	Parameter VFP bound to: 637 - type: integer 
+	Parameter VSP bound to: 643 - type: integer 
+	Parameter VMAX bound to: 666 - type: integer 
+	Parameter HSPP bound to: 1 - type: integer 
+	Parameter VSPP bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga' (17#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/vga.v:15]
+WARNING: [Synth 8-3848] Net led_bits in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:133]
+WARNING: [Synth 8-3848] Net dpy0 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:14]
+WARNING: [Synth 8-3848] Net dpy1 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:15]
+WARNING: [Synth 8-3848] Net uart_rdn in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:18]
+WARNING: [Synth 8-3848] Net uart_wrn in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:19]
+WARNING: [Synth 8-3848] Net base_ram_addr in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:26]
+WARNING: [Synth 8-3848] Net base_ram_be_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:27]
+WARNING: [Synth 8-3848] Net base_ram_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:28]
+WARNING: [Synth 8-3848] Net base_ram_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:29]
+WARNING: [Synth 8-3848] Net base_ram_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:30]
+WARNING: [Synth 8-3848] Net ext_ram_addr in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:34]
+WARNING: [Synth 8-3848] Net ext_ram_be_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:35]
+WARNING: [Synth 8-3848] Net ext_ram_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:36]
+WARNING: [Synth 8-3848] Net ext_ram_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:37]
+WARNING: [Synth 8-3848] Net ext_ram_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:38]
+WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:45]
+WARNING: [Synth 8-3848] Net flash_rp_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:47]
+WARNING: [Synth 8-3848] Net flash_vpen in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:48]
+WARNING: [Synth 8-3848] Net flash_ce_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:49]
+WARNING: [Synth 8-3848] Net flash_oe_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:50]
+WARNING: [Synth 8-3848] Net flash_we_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:51]
+WARNING: [Synth 8-3848] Net flash_byte_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:52]
+WARNING: [Synth 8-3848] Net sl811_a0 in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:55]
+WARNING: [Synth 8-3848] Net sl811_wr_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:57]
+WARNING: [Synth 8-3848] Net sl811_rd_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:58]
+WARNING: [Synth 8-3848] Net sl811_cs_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:59]
+WARNING: [Synth 8-3848] Net sl811_rst_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:60]
+WARNING: [Synth 8-3848] Net sl811_dack_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:61]
+WARNING: [Synth 8-3848] Net dm9k_cmd in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:66]
+WARNING: [Synth 8-3848] Net dm9k_iow_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:68]
+WARNING: [Synth 8-3848] Net dm9k_ior_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:69]
+WARNING: [Synth 8-3848] Net dm9k_cs_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:70]
+WARNING: [Synth 8-3848] Net dm9k_pwrst_n in module/entity thinpad_top does not have driver. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (18#1) [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/thinpad_top.v:4]
+WARNING: [Synth 8-3331] design PCNext has unconnected port Reset
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[27]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[26]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[25]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[24]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[23]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[22]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[21]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[20]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[19]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[18]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[17]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[16]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[15]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[14]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[13]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[12]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[11]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[10]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[9]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[8]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[7]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[6]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[5]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[4]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[3]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[2]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[1]
+WARNING: [Synth 8-3331] design PCJump has unconnected port PC[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[10]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[9]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[8]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port leds[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy0[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port dpy1[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port uart_rdn
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port uart_wrn
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[19]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[18]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[17]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[16]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[10]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[9]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[8]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[7]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[6]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[5]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[4]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_addr[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_be_n[3]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_be_n[2]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_be_n[1]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_be_n[0]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_ce_n
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_oe_n
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port base_ram_we_n
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[19]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[18]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[17]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[16]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[15]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[14]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[13]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[12]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[11]
+WARNING: [Synth 8-3331] design thinpad_top has unconnected port ext_ram_addr[10]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 447.574 ; gain = 158.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 447.574 ; gain = 158.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 447.574 ; gain = 158.434
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Finished Parsing XDC File [c:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc] for cell 'clock_gen'
+Parsing XDC File [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_11M0592_IBUF'. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:4]
+WARNING: [Constraints 18-619] A clock with name 'clk_50M' already exists, overwriting the previous clock with the same name. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'clock_btn_IBUF'. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'reset_btn_IBUF'. [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc:19]
+Finished Parsing XDC File [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 814.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  c:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  c:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCHalt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemoryWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemoryRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ExtSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'RxD_state_reg' in module 'async_receiver'
+INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OversamplingCnt0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'TxD_state_reg' in module 'async_transmitter'
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                      00000000001 |                             0000
+                 iSTATE4 |                      00000000010 |                             0001
+                 iSTATE7 |                      00000000100 |                             1000
+                 iSTATE6 |                      00000001000 |                             1001
+                 iSTATE3 |                      00000010000 |                             1010
+                 iSTATE1 |                      00000100000 |                             1011
+                 iSTATE2 |                      00001000000 |                             1100
+                  iSTATE |                      00010000000 |                             1101
+                 iSTATE9 |                      00100000000 |                             1110
+                 iSTATE8 |                      01000000000 |                             1111
+                 iSTATE0 |                      10000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxD_state_reg' using encoding 'one-hot' in module 'async_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                      00000000001 |                             0000
+                  iSTATE |                      00000000010 |                             0100
+                 iSTATE7 |                      00000000100 |                             1000
+                 iSTATE6 |                      00000001000 |                             1001
+                 iSTATE4 |                      00000010000 |                             1010
+                 iSTATE2 |                      00000100000 |                             1011
+                 iSTATE3 |                      00001000000 |                             1100
+                 iSTATE0 |                      00010000000 |                             1101
+                 iSTATE9 |                      00100000000 |                             1110
+                 iSTATE8 |                      01000000000 |                             1111
+                 iSTATE1 |                      10000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'TxD_state_reg' using encoding 'one-hot' in module 'async_transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     22 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
+	               22 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 65    
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	  11 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	  29 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 35    
+	   2 Input      8 Bit        Muxes := 58    
+	   2 Input      5 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 94    
+	   5 Input      1 Bit        Muxes := 46    
+	   4 Input      1 Bit        Muxes := 15    
+	  11 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module thinpad_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Muxes : 
+	  29 Input      8 Bit        Muxes := 4     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 10    
+Module Select5bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegisterHeap 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Select32bits 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PCNext 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 61    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 35    
+	   2 Input      8 Bit        Muxes := 57    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 55    
+	   5 Input      1 Bit        Muxes := 46    
+	   4 Input      1 Bit        Muxes := 15    
+Module BaudTickGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+Module async_receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 1     
+Module BaudTickGen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+Module async_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element ext_uart_r/RxD_endofpacket_reg was removed.  [C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.srcs/sources_1/new/async.v:176]
+INFO: [Synth 8-5545] ROM "cpu/alu/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "vga800x600at75/vdata" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][31]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][30]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][29]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][28]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][27]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][26]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][25]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][24]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][23]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][22]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][21]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][20]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][19]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][18]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][17]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][16]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][15]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][14]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][13]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][12]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][11]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][10]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][9]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][8]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][7]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][6]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][5]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][4]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][3]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][2]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][1]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[1][0]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][31]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][30]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][29]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][28]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][27]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][26]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][25]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][24]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][23]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][22]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][21]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][20]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][19]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][18]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][17]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][16]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][15]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][14]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][13]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][12]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][11]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][10]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][9]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][8]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][7]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][6]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][5]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][4]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][3]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][2]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][1]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[2][0]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][31]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][30]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][29]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][28]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][27]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][26]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][25]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][24]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][23]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][22]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][21]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][20]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][19]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][18]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][17]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][16]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][15]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][14]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][13]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][12]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][11]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][10]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][9]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][8]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][7]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][6]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][5]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][4]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][3]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][2]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][1]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[3][0]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[0][31]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[0][30]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[0][29]) is unused and will be removed from module RegisterHeap.
+WARNING: [Synth 8-3332] Sequential element (Register_reg[0][28]) is unused and will be removed from module RegisterHeap.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen/clk_out1' to pin 'clock_gen/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen/clk_out2' to pin 'clock_gen/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'clk_50M'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 814.762 ; gain = 525.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 815.961 ; gain = 526.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll_example   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |pll_example |     1|
+|2     |CARRY4      |    18|
+|3     |LUT1        |    12|
+|4     |LUT2        |     5|
+|5     |LUT3        |    10|
+|6     |LUT4        |    24|
+|7     |LUT5        |     6|
+|8     |LUT6        |    15|
+|9     |FDRE        |   128|
+|10    |FDSE        |     5|
+|11    |IBUF        |     2|
+|12    |OBUF        |    13|
+|13    |OBUFT       |   128|
++------+------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------------------+------+
+|      |Instance         |Module                      |Cells |
++------+-----------------+----------------------------+------+
+|1     |top              |                            |   369|
+|2     |  ext_uart_r     |async_receiver              |    77|
+|3     |    tickgen      |BaudTickGen                 |    41|
+|4     |  ext_uart_t     |async_transmitter           |    70|
+|5     |    tickgen      |BaudTickGen__parameterized0 |    37|
+|6     |  vga800x600at75 |vga                         |    58|
++------+-----------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 817.113 ; gain = 527.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1839 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 817.113 ; gain = 160.785
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 817.113 ; gain = 527.973
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 248 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 817.113 ; gain = 539.441
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liujiashuo/Desktop/computerPrinciple/homework4/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 817.113 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  1 10:17:22 2018...
