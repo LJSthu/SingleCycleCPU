@@ -1,2 +1,2 @@
-# homework4
-单周期CPU by ljs
+# SingleCycleCPU
+Contains the single-cycle CPU implementation in vivado by ljs
